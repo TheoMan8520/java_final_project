@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f8f3f0;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.planner.ImageController">
+    <children>
+        <TableView fx:id="recordsTable" layoutX="60.0" layoutY="80.0" prefHeight="280.0" prefWidth="480.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5px; -fx-border-width: 2px; -fx-border-color: #e9b9aa; -fx-border-radius: 5px;">
+            <columns>
+                <TableColumn fx:id="colType" prefWidth="86.89437866210938" text="Type" />
+                <TableColumn fx:id="colTodo" prefWidth="203.3067626953125" text="Thing to do" />
+                <TableColumn fx:id="colNote" prefWidth="97.5697021484375" text="Note" />
+                <TableColumn fx:id="colDeadline" prefWidth="85.5" text="Deadline" />
+            </columns>
+        </TableView>
+        <Label fx:id="currentFile" alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="30.0" prefHeight="35.0" prefWidth="240.0" text="Planner" textFill="#d98481">
+            <font>
+                <Font name="Songti SC Black" size="35.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
